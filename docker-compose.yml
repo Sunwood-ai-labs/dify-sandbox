@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  dify-sandbox:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8194:8194"
+    environment:
+      - DEBUG=True # 必要に応じて環境変数を設定
